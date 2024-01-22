@@ -18,6 +18,7 @@ def start(update: Update, context: CallbackContext) -> None:
 
 def help_command(update: Update, context: CallbackContext) -> None:
     update.message.reply_text('use "/faucet address" to get bevm-canary-test BTC faucet。')
+    
 
 def faucet_command(update: Update, context: CallbackContext)-> None:
     print(update.message.chat_id)
