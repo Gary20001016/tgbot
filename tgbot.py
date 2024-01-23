@@ -46,7 +46,7 @@ def transfer(to_address):
             mnemonic = env["MNEMONIC"]
     assert mnemonic != "", "Please set MNEMONIC"
     Account.enable_unaudited_hdwallet_features()
-    w3 = Web3(Web3.HTTPProvider('https://testnet.bevm.io/rpc'))
+    w3 = Web3(Web3.HTTPProvider('https://canary-testnet.bevm.io/'))
 
     account = Account.from_mnemonic(mnemonic)
     from_address = account.address
